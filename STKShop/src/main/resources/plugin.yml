@@ -1,0 +1,20 @@
+name: STKShop
+version: 1.0.0
+main: net.stksmp.shop.STKShop
+api-version: '1.21'
+author: STK
+softdepend: [Vault, PlaceholderAPI]
+commands:
+  shop:
+    description: Opens the STK shop
+    usage: /shop
+  sell:
+    description: Opens the STK sell chest
+    usage: /sell
+  stkshop:
+    description: STKShop admin commands
+    usage: /stkshop reload
+    permission: stkshop.admin
+permissions:
+  stkshop.admin:
+    default: op

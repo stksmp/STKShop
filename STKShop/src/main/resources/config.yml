@@ -1,0 +1,121 @@
+# STKShop - edit this file to change categories, prices, pages, and item rewards.
+settings:
+  title: '&b&lSTK &fShop'
+  sell-title: '&8Sell Items'
+  shards-url: 'https://stksmp.github.io/store'
+  shards-lore:
+    - '&7Buy shards on the STK website.'
+    - '&eClick to open the store link in chat.'
+  sell-button-slot: 53
+  sell-button-material: LIME_STAINED_GLASS_PANE
+  sell-button-name: '&a&lSELL ITEMS'
+  sell-button-lore:
+    - '&7Sell everything you placed in this menu.'
+    - '&eClick to confirm sale.'
+  sell-sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  # Prices are per item. Set to 0 to disable selling that material.
+  sell-prices:
+    SUGAR_CANE: 2.0
+    KELP: 1.0
+    DRIED_KELP: 2.0
+    BONE: 3.0
+    BONE_MEAL: 0.5
+    TUFF: 0.5
+    COBBLESTONE: 0.15
+    WHEAT: 1.0
+    CARROT: 1.0
+    POTATO: 1.0
+    MELON_SLICE: 0.25
+    BAMBOO: 0.5
+  # Item stacks in categories use material, amount, price, name, lore.
+  categories:
+    blocks:
+      slot: 20
+      material: GRASS_BLOCK
+      name: '&a&lBlocks & Building'
+      lore: ['&7Building blocks and useful materials', '&eClick to browse']
+      items:
+        - material: STONE
+          amount: 16
+          price: 24
+          name: '&fStone x16'
+          lore: ['&7A basic building block', '&ePrice: &a$24']
+        - material: TUFF
+          amount: 16
+          price: 40
+          name: '&7Tuff x16'
+          lore: ['&7A natural building block', '&ePrice: &a$40']
+        - material: OAK_LOG
+          amount: 16
+          price: 64
+          name: '&6Oak Logs x16'
+          lore: ['&ePrice: &a$64']
+    farming:
+      slot: 22
+      material: SUGAR_CANE
+      name: '&2&lFarming'
+      lore: ['&7Farm supplies and drops', '&eClick to browse']
+      items:
+        - material: SUGAR_CANE
+          amount: 16
+          price: 48
+          name: '&aSugar Cane x16'
+          lore: ['&ePrice: &a$48']
+        - material: KELP
+          amount: 16
+          price: 24
+          name: '&2Kelp x16'
+          lore: ['&ePrice: &a$24']
+        - material: BONE_MEAL
+          amount: 16
+          price: 32
+          name: '&fBone Meal x16'
+          lore: ['&ePrice: &a$32']
+    enchant-books:
+      slot: 24
+      material: ENCHANTED_BOOK
+      name: '&d&lEnchanted Books'
+      lore: ['&7Useful enchantment books', '&eClick to browse']
+      items:
+        - material: ENCHANTED_BOOK
+          amount: 1
+          price: 2500
+          name: '&bEfficiency V Book'
+          enchant: EFFICIENCY:5
+          lore: ['&7Efficiency V', '&ePrice: &a$2,500']
+        - material: ENCHANTED_BOOK
+          amount: 1
+          price: 2000
+          name: '&bFortune III Book'
+          enchant: FORTUNE:3
+          lore: ['&7Fortune III', '&ePrice: &a$2,000']
+        - material: ENCHANTED_BOOK
+          amount: 1
+          price: 1800
+          name: '&bUnbreaking III Book'
+          enchant: UNBREAKING:3
+          lore: ['&7Unbreaking III', '&ePrice: &a$1,800']
+        - material: ENCHANTED_BOOK
+          amount: 1
+          price: 2200
+          name: '&bMending Book'
+          enchant: MENDING:1
+          lore: ['&7Mending', '&ePrice: &a$2,200']
+    pickaxes:
+      slot: 31
+      material: DIAMOND_PICKAXE
+      name: '&9&l3x3 Pickaxes'
+      lore: ['&7Mine a 3x3 area at once', '&eClick to browse']
+      items:
+        - material: DIAMOND_PICKAXE
+          amount: 1
+          price: 25000
+          name: '&b&lDiamond 3x3 Pickaxe'
+          pickaxe3x3: true
+          lore: ['&7Mines a 3x3 area', '&7Efficiency V, Unbreaking III', '&7Fortune III, Mending I', '&ePrice: &a$25,000']
+        - material: NETHERITE_PICKAXE
+          amount: 1
+          price: 50000
+          name: '&5&lNetherite 3x3 Pickaxe'
+          pickaxe3x3: true
+          lore: ['&7Mines a 3x3 area', '&7Efficiency V, Unbreaking III', '&7Fortune III, Mending I', '&ePrice: &a$50,000']
